@@ -1,0 +1,665 @@
+<!-- remember to change this to index.html --> 
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Benchmark dataset</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="customstylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://kit.fontawesome.com/2f43c56358.js" crossorigin="anonymous"></script>
+    <script src= "script.js"></script>
+    <script src= "https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://unpkg.com/htmlincludejs"></script>  
+  </head>
+     
+     <!-- HEADER/ NAV BAR -->
+    <div class>
+    <header class="d-flex flex-wrap justify-content-center pb-2 mb-3 border-bottom">
+        <a href="/" class=" d-flex align-items-center mt-0 mb-4 mb-md-5 me-md-auto text-dark text-decoration-none"> </a>
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="tableNADBenchmarks.pdf" class="nav-link">Datasets</a></li>
+        <li class="nav-item"><a href="aboutus.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="https://github.com/Adiba08/NaDBenchmarks" class="nav-link">Github</a></li>
+      </ul>
+    </header>
+  </div>
+
+  <body style="background-color:#FFFAF0;">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    
+  <h1>Benchmark datasets for Machine Learning for Natural Disasters</h1>
+  <p> This website curates some of the currently existing benchmark datasets for machine learning for natural disaster management. We add a brief description of the dataset, including the machine learning task it is benchmarked for and the application of it. You can use our search bar to look for datasets, or contact us to add your own benchmark dataset to this curation. </p>
+ 
+ <!-- Add search bar -->
+    <div class="row height d-flex justify-content-center align-items-center">
+      <div class="col-md-8">
+        <div class="search">
+          <i class="fa fa-search"></i>
+          <input type="text" id="myInput" onkeyup="myFunction()" onclick="myFunction()" class="form-control" placeholder="Search for a dataset">
+          <button class="btn btn-primary">Search</button>
+          </div>
+         </div>
+       </div>
+
+       <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for a dataset"> -->
+
+
+<ul id="myUL" class="listofbenchmarks">
+  <li><a href="droughtED.html">DroughtED: A dataset and methodology for drought forecasting spanning multiple climate zones | Numerical | Drought | Prevention</a></li>
+  <li><a href="spacenet8.html">SpaceNet 8 - The Detection of Flooded Roads and Buildings | Image | Flood | Preparedness</a></li>
+  <li><a href="xBD.html">Creating xBD: A dataset for assessing building damage from satellite imagery | Image | General | Response</a></li>
+  <li><a href="Hephaestus.html">Hephaestus: A large scale multitask dataset towards InSAR understanding | Image | Volcano | Preparedness</a></li>
+  <li><a href="FigLib and smokeynet.html">FIgLib & SmokeyNet: Dataset and Deep Learning Model for Real-Time Wildland Fire Smoke Detection | Image | Wildfire | Preparedness</a></li>
+  <li><a href="EarthNet2021.html">EarthNet2021: A novel large-scale dataset and challenge for forecasting localized climate impacts | Video | Etreme Weather | Prevention</a></li>
+  <li><a href="CrisisBench.html">CrisisBench: Benchmarking Crisis-related Social Media Datasets for Humanitarian Information Processing | Text | General | Response</a></li>
+  <li><a href="next day wildfire.html">Next Day Wildfire Spread: A Machine Learning Data Set to Predict Wildfire Spreading from Remote-Sensing Data | Image | Wildfire | Preparedness</a></li>
+  <li><a href="RescueNet.html">RescueNet: A High Resolution UAV Semantic Segmentation Benchmark Dataset for Natural Disaster Damage Assessment | Image | Hurricane | Response </a></li>
+  <li><a href="MSNet.html">MSNet: A Multilevel Instance Segmentation Network for Natural Disaster Damage Assessment in Aerial Videos | Video | Hurricane and Tornado | Response </a></li>
+  <li><a href="HumAID.html">HumAID: Human-Annotated Disaster Incidents Data from Twitter with Deep Learning Benchmarks | Text | General | Response</a></li>
+  <li><a href="FEMA and NOAA.html">Benchmark Dataset for Automatic Damaged Building Detection from Post-Hurricane Remotely Sensed Imagery | Multimodal (Vector data and Image) | Hurricane | Response</a></li>
+  <li><a href="FloodNet.html"> FloodNet: A High Resolution Aerial Imagery Dataset for Post Flood Scene Understanding | Image | Hurricane | Response</a></li>
+  <li><a href="active learning for event.html">Active learning for event detection in support of disaster analysis applications | Image | General | Preparedness </a></li>
+  <li><a href="Incidents Dataset.html">Detecting Natural Disasters, Damage, and Incidents in the Wild | Image | General | Preparedness</a></li>
+  <li><a href="Incidents1M.html">Incidents1M: a large-scale dataset of images with natural disasters, damage, and incidents | Image | General | Preparedness</a></li>
+  <li><a href="VIDI.html">VIDI: A Video Dataset of Incidents | Video | General | Preparedness</a></li>
+  <li><a href="DIRSM and FDSI.html">The Multimedia Satellite Task at MediaEval 2017: Emergency Response for Flooding Events | Image | Flood | Preparedness </a></li>
+  <li><a href="FCSM and FDSI.html">The Multimedia satellite task at mediaeval 2018: emergency response for flooding events | Image | Flood | Preparedness </a></li>
+  <li><a href="MEDIC.html">MEDIC: A Multi-Task Learning Dataset for Disaster Image Classification | Image | General | Preparedness</a></li>
+  <li><a href="climateNet.html">ClimateNet: Bringing the power of Deep Learning to weather and climate sciences via open datasets and architectures | Image | Atmospheric River and Tropical Cyclones  | Response</a></li>
+  <li><a href="Curating flood extent26.html">Curating flood extent data and leveraging citizen science for benchmarking machine learning solutions | Image | Flood | Preparedness</a>
+  </li>
+  <li><a href="image sentiment.html">Visual Sentiment Analysis from Disaster Images in Social Media | Image | General | Recovery</a></li>
+  <li><a href="crisisMMD.html">CrisisMMD: Multimodal Twitter Datasets from Natural Disasters | Multimodal (Image and Text) | General | Response</a></li>
+  <li><a href="Damage Assessment from Social Media Imagery29.html">Damage Assessment from Social Media Imagery Data During Disasters | Image | General | Response</a></li>
+  <li><a href="Damage Identification in Social Media30.html">Damage Identification in Social Media Posts using Multimodal Deep Learning | Multimodal (Image, Captioned Image, and Text) | General | Response</a></li>
+  <li><a href="Deep Learning Benchmarks and Datasets for Social Media20.html">Deep Learning Benchmarks and Datasets for Social Media Image Classification for Disaster Response - Combination of AIDR-DT and DMD | Image | General | Preparedness</a></li>
+  <li><a href="Deep Learning Benchmarks and Datasets for Social Media21.html">Deep Learning Benchmarks and Datasets for Social Media Image Classification for Disaster Response - Combination of DAD, CrisisMMD, AIDR-Info and DMD | Image | General | Response</a></li>
+  <li><a href="Deep Learning Benchmarks and Datasets for Social Media22.html">Deep Learning Benchmarks and Datasets for Social Media Image Classification for Disaster Response - Combination of CrisisMMD and DMD | Image | General | Response</a></li>
+  <li><a href="Deep Learning Benchmarks and Datasets for Social Media23.html">Deep Learning Benchmarks and Datasets for Social Media Image Classification for Disaster Response - Combination of DAD, CrisisMMD and DMD | Image | General | Response</a></li> 
+</ul>
+
+  
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+     document.getElementById("myUL").hidden = false;
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "block";  
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+
+<!-- Blog entry 1 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>DroughtED: A dataset and methodology for drought forecasting spanning multiple climate zones</b></h3> <!-- paper title --> 
+    <h5> Numerical | Drought | Prevention </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>DroughtED is a dataset for drought forecasting, and introduces this problem as <strong>multiclass ordinal classification</strong>. It contains 180 daily meteorological observations with geospatial location meta-data for 3,108 US counties..</p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="droughtED.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+<!-- Blog entry 2 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>SpaceNet 8 - The Detection of Flooded Roads and Buildings</b></h3> <!-- paper title --> 
+    <h5> Image | Flood | Preparedness </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>SpaceNet 8 is flood-disaster dataset for building detection, road network extraction and flood detection. It covers 850km^2, including 32k buildings and 1,300km roads. It is introduced for multi-class segmentation and binary classification.</p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="spacenet8.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->
+
+<!-- Blog entry 3 -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <div class="w3-container w3-padding-large">
+      <h3><b>Creating xBD: A dataset for assessing building damage from satellite imagery</b></h3><!-- paper title --> 
+      <h5> Image | General | Response </h5>  <!-- type | Topic | Disaster Phase --> 
+    </div>
+    <div class="w3-container">
+      <p>xBD is a general-disaster dataset for change detection and damage assessment of buildings. It contains 700,000 labeled building instances in over 5,000 km^2 of imagery. It is introduced for multiclass (ordinal) classification.</p>  <!-- data description --> 
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="xBD.html"> <b> LEARN MORE »  </b> </a> </button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+<!-- _____________Blog entry ends here _____________-->
+
+<!-- Blog entry 4 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>Hephaestus: A large scale multitask dataset towards InSAR understanding</b></h3> <!-- paper title --> 
+    <h5> Image | Volcano | Preparedness </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>Hephaestus is a volcano-disaster dataset for semantic segmentation of ground deformation. It contains 19,919 labeled and 110,573 unlabeled Sentinel-1 interferograms. It is introduced for binary classification.</p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="Hephaestus.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->   
+
+<!-- Blog entry 5 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>FIgLib & SmokeyNet: Dataset and Deep Learning Model for Real-Time Wildland Fire Smoke Detection </b></h3> <!-- paper title --> 
+    <h5> Image | Wildfire | Preparedness </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>FIgLib is a dataset for real-time wildfire smoke detection. It contains 24,800 labeled wildfire smoke images of Southern California and is introduced for binary classification. </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="FigLib and smokeynet.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________--> 
+
+<!-- Blog entry 6 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>EarthNet2021: A novel large-scale dataset and challenge for forecasting localized climate impacts</b></h3> <!-- paper title --> 
+    <h5> Video | Etreme Weather | Prevention </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>EarthNet2021 is a dataset for Earth surface forecasting, extreme summer prediction, and seasonal cycle prediction. It contains more than 32,000 samples containing Sentinel 2 level 2A imagery and daily climatic conditions. This dataset is introduced for video prediction. </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="EarthNet2021.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->
+
+<!-- Blog entry 7 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>CrisisBench: Benchmarking Crisis-related Social Media Datasets for Humanitarian Information Processing</b></h3> <!-- paper title --> 
+    <h5> Text | General | Response </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>CrisisBench is general-disaster dataset for informativeness detection and categorization of humanitarian tasks post-disaster. It contains 166,098 tweets for informativeness and 141,533 tweets for humanitarian classification. It is introduced for binary and multiclass classification.  </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="CrisisBench.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->
+
+<!-- Blog entry 8 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>Next Day Wildfire Spread: A Machine Learning Data Set to Predict Wildfire Spreading from Remote-Sensing Data</b></h3> <!-- paper title --> 
+    <h5> Image | Wildfire | Preparedness </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>Next Day Wildfire Spread is a dataset for wildfire spread prediction. It contains images for 18,545 fire events with snapshots at time t and t+1 day. It is introduced for image segmentation.   </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="next day wildfire.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->
+
+<!-- Blog entry 9 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>RescueNet: A High Resolution UAV Semantic Segmentation Benchmark Dataset for Natural Disaster Damage Assessment</b></h3> <!-- paper title --> 
+    <h5> Image | Hurricane | Response </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>RescueNet is a dataset for hurricane damage assessmnet. It contains 4,494 post disaster images collected after Hurricane Michael and is introduced for semantic segmentation.   </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="RescueNet.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->
+
+<!-- Blog entry 10 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>MSNet: A Multilevel Instance Segmentation Network for Natural Disaster Damage Assessment in Aerial Videos </b></h3> <!-- paper title --> 
+    <h5> Video | Hurricane and Tornado | Response </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>ISBDA (Instance Segmentation in Building Damage Assessment) is a dataset for hurricane and tornado building damage assessment. It contains 1,030 images from 10 videos of disaster aftermaths (84 min total duration) and 2,961 damaged part instances. It is introduced for image segmentation and multiclass (ordinal) classification. </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="MSNet.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->
+
+<!-- Blog entry 11 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>HumAID: Human-Annotated Disaster Incidents Data from Twitter with Deep Learning Benchmarks </b></h3> <!-- paper title --> 
+    <h5> Text | General | Response </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>HumAID is a general-disaster dataset for categratization of humanitarian tasks post disaster. It contains 77,196 annotated tweets and is introduced for multiclass classification. </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="HumAID.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->
+
+<!-- Blog entry 12 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>Benchmark Dataset for Automatic Damaged Building Detection from Post-Hurricane Remotely Sensed Imagery </b></h3> <!-- paper title --> 
+    <h5> Multimodal (Vector data and Image) | Hurricane | Response </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>FEMA and NOAA is a dataset for hurricane damaged building detection. It contains vector (FEMA) and image (NOAA) data and is introduced for image segmentation and multiclass (ordinal) classification. </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="FEMA and NOAA.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->
+
+<!-- Blog entry 13 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>FloodNet: A High Resolution Aerial Imagery Dataset for Post Flood Scene Understanding </b></h3> <!-- paper title --> 
+    <h5> Image | Hurricane | Response </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>FloodNet is dataset for post-flood scene understanding, i.e flood detection and distinguishing different water bodies and flood. It contains about 11, 000 question-image pairs for VQA and 3,200 images. It is introduced for image classification, semantic segmentation, and visual question answering. </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="FloodNet.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->
+
+<!-- Blog entry 14 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>Active learning for event detection in support of disaster analysis applications </b></h3> <!-- paper title --> 
+    <h5> Image | General | Preparedness </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>This is a dataset for general disaster detection. It contains 160 human-annotated training set images, 2,516 human-annotated test-set images and around 2500 additional images. It is introduced for multiclass multilabel classification.  </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="active learning for event.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->
+
+<!-- Blog entry 15 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>Detecting Natural Disasters, Damage, and Incidents in the Wild </b></h3> <!-- paper title --> 
+    <h5> Image | General | Preparedness </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>Incidents Dataset is dataset for general disaster detection. It contains 1,144,148 images (with 446,684 images as positives) and is introduced for multiclass classification. </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="Incidents Dataset.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->
+
+<!-- Blog entry 16 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>Incidents1M: a large-scale dataset of images with natural disasters, damage, and incidents </b></h3> <!-- paper title --> 
+    <h5> Image | General | Preparedness </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>Incidents1M is an extention of the Incidents Dataset for general disaster detection. It contains 1,787,154 images and is introduced for multiclass multilabel classification. </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="Incidents1M.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->
+
+<!-- Blog entry 17 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>VIDI: A Video Dataset of Incidents </b></h3> <!-- paper title --> 
+    <h5> Video | General | Preparedness </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>Video Dataset of Incidents (VIDI) is a general-disaster dataset for video incident classification. It contains 4,534 video clips of 43 incident categories and is introduced for multiclass classification. </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="VIDI.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->
+
+<!-- Blog entry 18 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>The Multimedia Satellite Task at MediaEval 2017: Emergency Response for Flooding Events  </b></h3> <!-- paper title --> 
+    <h5> Image | Flood | Preparedness </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>Disaster Image Retrieval form Social Media (DIRSM) and Flood Detection in Satellite Images (FDSI) are datasets for flood detection. DIRSM contains 6,600 Flickr images and FDSI's development set contains 462 image patches. They are both introduced for binary classification.  </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="DIRSM and FDSI.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->
+
+<!-- Blog entry 19 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>The multimedia satellite task at mediaeval 2018: emergency response for flooding events </b></h3> <!-- paper title --> 
+    <h5> Image | Flood | Preparedness </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>Flood Classification from Social Multimedia (FCSM) and Flood Detection from Satellite Imagery (FDSI) are datasets for road passability assessment, flood detection and flood classification. FCSM contains 7,387 tweets (development set), 3,683 images and features (test set) and FDSI contains 1,438 image patches (development set), 226 image patches (test set). They are both introduced for multilabel classification. </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="FCSM and FDSI.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->
+
+
+<!-- _____________Blog entry ends here _____________-->  
+
+<!-- Blog entry 24 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>MEDIC: A Multi-Task Learning Dataset for Disaster Image Classification </b></h3> <!-- paper title --> 
+    <h5> Image | General | Preparedness </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>MEDIC is a general-disaster dataset for disaster type detection, informativeness classification, categorization of humanitarian tasks, and damage severity assessment. It contains 71,198 images and is introduced for multitask learning. </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="MEDIC.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->
+
+<!-- Blog entry 25 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>ClimateNet: Bringing the power of Deep Learning to weather and climate sciences via open datasets and architectures </b></h3> <!-- paper title --> 
+    <h5> Image | Atmospheric River and Tropical Cyclones  | Response </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>ClimateNet Dataset is a dataset for atmospheric river and tropical cyclone damage assessment. It contains 219 image samples, and is introduced for semantic segmentation and multilabel classification. </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="climateNet.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->  
+
+<!-- Blog entry 26 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>Curating flood extent data and leveraging citizen science for benchmarking machine learning solutions </b></h3> <!-- paper title --> 
+    <h5> Image | Flood | Preparedness </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>This is an image dataset for flood extent detection. It is a 4.11 GB download and is introdcued for image segmentation. </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="Curating flood extent26.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->
+
+<!-- Blog entry 27 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>Visual Sentiment Analysis from Disaster Images in Social Media </b></h3> <!-- paper title --> 
+    <h5> Image | General | Recovery </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>Image-sentiment dataset is a general-disaster dataset for sentiment analysis. It contains 4,003 annotated disaster related images and is introduced for multiclass multilabel classification. </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="image sentiment.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->
+
+<!-- Blog entry 28 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>CrisisMMD: Multimodal Twitter Datasets from Natural Disasters </b></h3> <!-- paper title --> 
+    <h5> Multimodal (Image and Text) | General | Response </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>CrisisMMD is a general-disaster dataset for informativeness classification, categorization of humanitarian tasks, and damage severity assessment. It contains 18,082 images and 16,058 tweets and is introduced for binary classification, multiclass classification and multiclass (ordinal) classification. </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="CrisisMMD.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->
+
+<!-- Blog entry 29 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>Damage Assessment from Social Media Imagery Data During Disasters </b></h3> <!-- paper title --> 
+    <h5> Image | General | Response </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>This is a general-disaster dataset for damage severity assessment. It contains around 25,000 images of natural disasters from social media and Google Images and is introduced for multiclass (ordinal) classification. </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="Damage Assessment from Social Media Imagery29.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->
+
+<!-- Blog entry 30 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b>Damage Identification in Social Media Posts using Multimodal Deep Learning </b></h3> <!-- paper title --> 
+    <h5> Multimodal (Image, Captioned Image, and Text) | General | Response </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>This is a general-disaster dataset for damage assessment. It contains 10,875 images, 5,879 captioned images, and 19,031 textual data. It is introduced for multiclass classification. </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="Damage Identification in Social Media30.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->
+
+<!-- FIX THIS  Deep Learning Benchmarks and Datasets for Social Media Image Classification for Disaster Response-->
+<!-- thing 1-->
+<div>
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b> Deep Learning Benchmarks and Datasets for Social Media Image Classification for Disaster Response</b></h3> <!-- paper title --> 
+    <h5> This paper introduces four different datasets for four different ML tasks </h5>  
+  </div>
+
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b> Combination of AIDR-DT and DMD</b></h3> <!-- paper title --> 
+    <h5> Image | General | Preparedness </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>This dataset is a combination of AIDR-DT and DMD data for <strong> general-disaster type detection </strong>. It contains 17,511 images and utilizes multiclass classification.  </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="Deep Learning Benchmarks and Datasets for Social Media20.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->
+
+<!-- thing 2 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b> Combination of DAD, CrisisMMD, AIDR-Info and DMD</b></h3> <!-- paper title --> 
+    <h5> Image | General | Response </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>This dataset is a combination of DAD, CrisisMMD, AIDR-Info and DMD data for <strong> general-disaster informativeness classification</strong> . It contains 59,716 images and is introduced for binary classification. </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="Deep Learning Benchmarks and Datasets for Social Media21.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- _____________Blog entry ends here _____________-->
+
+<!-- Thing 3-->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b> Combination of CrisisMMD and DMD </b></h3> <!-- paper title --> 
+    <h5> Image | General | Response </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>This dataset is a combination of CrisisMMD and DMD data for <strong> general-disaster categorization of humanitarian tasks</strong> . It contains 16,769 images and is introduced for multiclass classification. </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="Deep Learning Benchmarks and Datasets for Social Media22.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+<!-- Thing 4 -->
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container w3-padding-large">
+    <h3><b> Combination of DAD, CrisisMMD and DMD</b></h3> <!-- paper title --> 
+    <h5> Image | General | Response </h5>  <!-- type | Topic | Disaster Phase --> 
+  </div>
+  <div class="w3-container">
+    <p>This dataset is a combination of DAD, CrisisMMD and DMD data for <strong> general-disaster damage severity assessment </strong> . It contains 34,896 images and is introduced for multiclass (ordinal) classification. </p>  <!-- data description --> 
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"> <a href="Deep Learning Benchmarks and Datasets for Social Media23.html"> <b> LEARN MORE »  </b> </a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+</div>
+</div> 
+
+  </body>
+</html>
