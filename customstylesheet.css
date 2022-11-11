@@ -12,6 +12,15 @@
 .dropdown-toggle {
   outline: 0;
 }
+
+
+.header-image {
+  background-image: url(“Universitylogo.jpg”);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  }
 /* __________________body____________________*/
 
 body,h1,h2,h3,h4,h5 {
