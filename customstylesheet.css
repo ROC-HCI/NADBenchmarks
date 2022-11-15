@@ -32,6 +32,11 @@ body{
   padding: 50px 100px 50px 100px;
   }
 
+  iframe {
+    aspect-ratio: 10/ 16;
+    height: 100%;
+    width: 100%;
+  }
  
 /* _________________search____________________*/
 
