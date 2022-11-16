@@ -63,11 +63,15 @@ body{
 }
 
  .search button{
-  position: relative;
+  position: absolute;
   top: 5px;
   right: 5px;
   height: 50px;
   width: 110px;
   background-color: dodgerblue;
-  
+}
+
+.search .mylist{
+  position: relative;
+  box-shadow: 0 0 40px rgba(51, 51, 51, .1);  
 }
