@@ -57,13 +57,13 @@ body{
   }
 
 .search .fa-search{
-  position: absolute;
+  position: relative;
   top: 20px;
   left: 16px;
 }
 
  .search button{
-  position: absolute;
+  position: relative;
   top: 5px;
   right: 5px;
   height: 50px;
