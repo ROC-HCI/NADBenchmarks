@@ -70,9 +70,3 @@ body{
   width: 110px;
   background-color: dodgerblue;
 }
-
-.search .mylist{
-  position: relative;
-  box-shadow: 0 0 40px rgba(51, 51, 51, .1);  
-  background-color: dodgerblue;
-}
