@@ -57,7 +57,7 @@ body{
   }
 
 .search .fa-search{
-  position: relative;
+  position: absolute;
   top: 20px;
   left: 16px;
 }
